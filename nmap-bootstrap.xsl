@@ -132,7 +132,7 @@ Andreas Hontzia (@honze_net)
           <xsl:for-each select="/nmaprun/host[status/@state='up']">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title"><xsl:value-of select="address/@addr"/><xsl:if test="count(hostnames/hostname) > 0"> - <xsl:value-of select="hostnames/hostname/@name"/></xsl:if></h3>
+                <h4 style="font-weight: bold;background-color:black;font-size:160%;color:white;" class="panel-title"><xsl:value-of select="address/@addr"/><xsl:if test="count(hostnames/hostname) > 0"> - <xsl:value-of select="hostnames/hostname/@name"/></xsl:if></h4>
               </div>
               <div class="panel-body">
                 <xsl:if test="count(hostnames/hostname) > 0">
